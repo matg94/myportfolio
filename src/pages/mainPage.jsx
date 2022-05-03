@@ -1,8 +1,10 @@
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import HomePage from '../components/HomePage';
-import Resume from '../components/Resume';
 import SectionCard from '../components/SectionCard';
+import HomePage from './HomePage';
+import AboutMe from '../content/AboutMe';
+import Education from '../content/Education';
+import WorkExperience from '../content/WorkExperience';
 
 const SectionStyle = {
     justifyContent: 'flex-start',
@@ -13,12 +15,14 @@ const SectionStyle = {
 function MainPage() {
   return (
     <div> 
-        <Parallax pages={8}>
+        <Parallax pages={9}>
 
+            {/* Front welcome full width page */}
             <ParallaxLayer>
                 <HomePage/>
             </ParallaxLayer>
 
+            {/* About me Section header */}
             <ParallaxLayer
                 style={SectionStyle}
                 sticky={{ start: 1, end: 2}}>
@@ -27,6 +31,20 @@ function MainPage() {
                         title="About Me"/>
             </ParallaxLayer>
 
+            {/* About me Section Content */}
+            <ParallaxLayer
+                style={{
+                    justifyContent: 'flex-end',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+                factor={2}
+                offset={1}>
+                <AboutMe/>
+            </ParallaxLayer>
+
+
+            {/* Education Section Header */}
             <ParallaxLayer
                 style={SectionStyle}
                 sticky={{ start: 3, end: 4}}>
@@ -35,6 +53,19 @@ function MainPage() {
                         title="Education"/>
             </ParallaxLayer>
 
+            {/* Education Section Content */}
+            <ParallaxLayer
+                style={{
+                    justifyContent: 'flex-end',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+                    factor={2}
+                    offset={3}>
+                    <Education/>
+            </ParallaxLayer>
+
+            {/* Work Experience Section Header */}
             <ParallaxLayer
                 style={SectionStyle}
                 sticky={{ start: 5, end: 6}}>
@@ -43,6 +74,19 @@ function MainPage() {
                         title="Work Experience"/>
             </ParallaxLayer>
 
+            {/* Work Experience Section Content */}
+            <ParallaxLayer
+                style={{
+                    justifyContent: 'flex-end',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+                factor={2}
+                offset={5}>
+                    <WorkExperience/>
+            </ParallaxLayer>
+
+            {/* Portfolio Section Header */}
             <ParallaxLayer
                 style={SectionStyle}
                 sticky={{ start: 7, end: 8}}>
@@ -51,8 +95,21 @@ function MainPage() {
                         title="Portfolio"/>
             </ParallaxLayer>
 
+            {/* Portfolio Section Content */}
             <ParallaxLayer
-                sticky={{ start: 1.5, end: 2.4}}
+                style={{
+                    justifyContent: 'flex-end',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+                factor={2}
+                offset={7}>
+                    <AboutMe/>
+            </ParallaxLayer>
+
+            {/* Profile Picture */}
+            {/* <ParallaxLayer
+                sticky={{ start: 1, end: 4}}
                 speed={0.01}
                 factor={1}>
                     <img 
@@ -63,23 +120,13 @@ function MainPage() {
                             display: 'flex',
                             alignItems: 'center',
                             width: '10%',
-                            border: '5px',
+                            border: '4px',
                             borderStyle: 'solid',
                         }}
                         src={'https://boredhumans.b-cdn.net/faces2/317.jpg'}
                         alt='profile'/>
-            </ParallaxLayer>
+            </ParallaxLayer> */}
 
-            <ParallaxLayer
-                style={{
-                    justifyContent: 'flex-end',
-                    display: 'flex',
-                    alignItems: 'center'
-                }}
-                factor={8}
-                offset={1}>
-                <Resume/>
-            </ParallaxLayer>
         </Parallax>
     </div>
   );
