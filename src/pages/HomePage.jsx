@@ -3,17 +3,22 @@ import { ParallaxLayer } from '@react-spring/parallax'
 
 function HomePage() {
     return (
-        <div
-            style={{
-                backgroundColor: 'gray',
-                alignItems: 'center',
-                height: '100%',
-                width: '100%'
-            }}>
-            <div>
-                <h1>I am a person lol</h1>
-                <h4>Hello, hello? hello!</h4>
-                <h4>nionia</h4>
+        <div className='resume' style={{
+            backgroundColor: '#161719',
+            width: '100%',
+            height: '100%'
+        }}>
+            <div className='sub-section'>
+                <h1 style={{
+                    textAlign: 'center',
+                    fontSize: '100px',
+                    color: '#8AB4F8'
+                }}>Mathieu Gautron</h1>
+                <h1 style={{
+                    textAlign: 'center',
+                    fontSize: '50px',
+                    color: '#8AB4F8'
+                }}>Fullstack Engineer</h1>
             </div>
         </div>
     );
