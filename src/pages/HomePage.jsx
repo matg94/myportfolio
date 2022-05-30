@@ -1,6 +1,6 @@
 import SocialMedia from '../components/SocialMedia'
 
-function HomePage() {
+function HomePage(props) {
     return (
         <div className='resume' style={{
             backgroundColor: '#161719',
@@ -17,18 +17,21 @@ function HomePage() {
                 <div className='sub-section'>
                     <div className='social-media'>
                         <SocialMedia
+                            url="https://www.linkedin.com/in/mat-gautron-177451b3/"
                             image='/linkedin_logo.png'
                             hoverImage='/linkedin_logo_hover.png'/>
                         <SocialMedia
+                            url="https://github.com/matg94/"
                             image='/github_logo.png'
                             hoverImage='/github_logo_hover.png'/>
                         <SocialMedia
+                            url="https://google.com"
                             image='/pdf_icon.png'
                             hoverImage='/pdf_icon_hover.png'/>
                     </div>
                 </div>
                 <div className='sub-section'>
-                    <img className='arrow' src="/arrow_green.png"></img>
+                    <img onClick={props.arrowOnClick} className='arrow' src="/arrow_green.png"></img>
                 </div>
             </div>
         </div>
