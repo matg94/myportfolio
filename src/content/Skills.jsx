@@ -4,8 +4,10 @@ function Skills() {
     return (
         <div className='resume'>
             <div className='section'>
+                <h1>Skills</h1>
                 <div className='sub-section'>
-                    <h1>Programming Languages</h1>
+                    <h2>Programming Languages</h2>
+                    <div className="separator"/>
                     <MyList items={[
                         "Java",
                         "Python",
@@ -16,7 +18,8 @@ function Skills() {
                     ]}/>
                 </div>
                 <div className='sub-section'>
-                    <h1>Web Frameworks / Libraries</h1>
+                    <h2>Web Frameworks / Libraries</h2>
+                    <div className="separator"/>
                     <MyList items={[
                         "Spring",
                         "React",
@@ -28,7 +31,8 @@ function Skills() {
                     ]}/>
                 </div>
                 <div className='sub-section'>
-                    <h1>Technologies</h1>
+                    <h2>Technologies</h2>
+                    <div className="separator"/>
                     <MyList items={[
                         "Kubernetes",
                         "Gitlab & Github",

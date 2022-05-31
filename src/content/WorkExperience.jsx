@@ -9,7 +9,6 @@ function WorkExperience() {
                         <h2>Software Engineer (E2)</h2>
                         <p>Nov 2020 - present</p>
                         <div className="separator"></div>
-                        <h1></h1>
                         <MyList items={[
                             "Full stack engineer, designed, developed, deployed, and maintained several REST web applications in a microservices architecture",
                             "Worked using Spring Boot, React, and Angular for development",
@@ -23,7 +22,6 @@ function WorkExperience() {
                         <h2>Software Engineer (intern)</h2>
                         <p>Dec 2017 - Apr 2018</p>
                         <div className="separator"></div>
-                        <h1></h1>
                         <MyList items={[
                             "Research, design, and implement backend system for storage of medical data",
                             "Created software to generate appropriate and useable placeholder data",
@@ -35,7 +33,6 @@ function WorkExperience() {
                         <h2>Software Engineer (intern)</h2>
                         <p>May 2017 - Dec 2017</p>
                         <div className="separator"></div>
-                        <h1></h1>
                         <MyList items={[
                             "Worked on creating the information display cards and interaction with the user through the chatbot system",
                             "Startup acquired by Botbot AI",

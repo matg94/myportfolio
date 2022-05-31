@@ -26,6 +26,7 @@ const HEADER_BACKGROUND = "#161719"
 function MainPage() {
     const ref = useRef();
     const scrollToAboutMe = () => ref.current.scrollTo(1.5)
+    const scrollToTop = () => ref.current.scrollTo(0)
     return (
         <div> 
             <Parallax pages={11} ref={ref}>
@@ -121,6 +122,13 @@ function MainPage() {
                     offset={9}>
                         <Portfolio/>
                 </ParallaxLayer>
+
+                <ParallaxLayer
+                    factor={1}
+                    offet={1}
+                    sticky={{start: 1, end: 11}}>
+                        <img className='arrow-return arrow' onClick={scrollToTop} src="/arrow_green.png"></img>
+                    </ParallaxLayer>
 
             </Parallax>
         </div>

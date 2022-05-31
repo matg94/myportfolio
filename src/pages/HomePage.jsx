@@ -9,10 +9,10 @@ function HomePage(props) {
         }}>
             <div className='section'>
                 <div className='sub-section'>
-                    <h1 style={{fontSize: '9rem'}}>Mat Gautron</h1>
+                    <h1 style={{fontSize: '3.25vw'}}>Mat Gautron</h1>
                 </div>
                 <div className='sub-section'>
-                    <h1 style={{fontSize: '3.5rem'}}>Fullstack Software Engineer</h1>
+                    <h1 style={{fontSize: '1.7vw'}}>Fullstack Software Engineer</h1>
                 </div>
                 <div className='sub-section'>
                     <div className='social-media'>
