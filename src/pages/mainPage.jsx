@@ -8,7 +8,6 @@ import Education from '../content/Education';
 import WorkExperience from '../content/WorkExperience';
 import Skills from '../content/Skills';
 import Portfolio from '../content/Portfolio';
-import ReactGA from 'react-ga';
 
 const SectionLeftStyle = {
     justifyContent: 'flex-start',
@@ -25,11 +24,6 @@ const SectionRightStyle = {
 const HEADER_BACKGROUND = "#161719"
 
 function MainPage() {
-    const { GA_ID } = process.env;
-
-    ReactGA.initialize(GA_ID);
-    ReactGA.pageview('FullPage')
-
     const ref = useRef();
     const scrollToAboutMe = () => ref.current.scrollTo(1.5)
     const scrollToTop = () => ref.current.scrollTo(0)
