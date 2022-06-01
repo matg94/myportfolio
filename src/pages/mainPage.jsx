@@ -28,7 +28,7 @@ function MainPage() {
     const scrollToAboutMe = () => ref.current.scrollTo(1.5)
     const scrollToTop = () => ref.current.scrollTo(0)
     return (
-        <div> 
+        <div className="font-link"> 
             <Parallax pages={11} ref={ref}>
 
                 {/* Front welcome full width page */}

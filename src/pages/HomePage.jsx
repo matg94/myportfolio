@@ -2,7 +2,7 @@ import SocialMedia from '../components/SocialMedia'
 
 function HomePage(props) {
     return (
-        <div className='resume' style={{
+        <div className='resume font-link' style={{
             backgroundColor: '#161719',
             width: '100%',
             height: '100%'
