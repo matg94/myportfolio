@@ -127,7 +127,7 @@ function MainPage() {
                     factor={1}
                     offet={1}
                     sticky={{start: 1, end: 11}}>
-                        <img className='arrow-return arrow' onClick={scrollToTop} src="/arrow_green.png"></img>
+                        <img alt='top' className='arrow-return arrow' onClick={scrollToTop} src="/arrow_green.png"></img>
                     </ParallaxLayer>
 
             </Parallax>
