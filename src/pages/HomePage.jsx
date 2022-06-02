@@ -41,8 +41,8 @@ function HomePage(props) {
                             hoverImage='/github_logo_hover.png'/>
                         <SocialMedia
                             url="https://google.com"
-                            image='/pdf_icon.png'
-                            hoverImage='/pdf_icon_hover.png'/>
+                            image='/cv_icon.png'
+                            hoverImage='/cv_icon_hover.png'/>
                     </div>
                 </div>
                 <div className='sub-section'>

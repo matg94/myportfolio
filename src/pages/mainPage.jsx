@@ -21,6 +21,12 @@ const SectionRightStyle = {
     alignItems: 'center'
 }
 
+const SectionProfile = {
+    justifyContent: 'flex-start',
+    display: 'flex',
+    alignItems: 'center'
+}
+
 const HEADER_BACKGROUND = "#161719"
 
 function MainPage() {
