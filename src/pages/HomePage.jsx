@@ -1,9 +1,8 @@
 import SocialMedia from '../components/SocialMedia'
 import GA4React from 'ga-4-react';
 
-const { GA_ID } = process.env;
 const ga4react = new GA4React(
-    GA_ID,
+    "G-3F30BFJXY4",
     { /* ga custom config, optional */ },
     [ /* additional code, optional */ ],
     5000 /* timeout, optional, defaults is 5000 */,
@@ -11,11 +10,10 @@ const ga4react = new GA4React(
     
 ga4react.initialize().then((ga4) => {
     ga4.pageview('MainPage')
-    ga4.gtag('event','pageview','MainPage') // or your custom gtag event
+    ga4.gtag('event','pageview','HomePage') // or your custom gtag event
 },(err) => {
     console.error(err)
 })
-
 
 function HomePage(props) {
     return (
