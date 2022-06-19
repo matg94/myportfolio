@@ -14,7 +14,6 @@ function Education() {
                     <h2>Bachelor of Science - BS, Computer Science</h2>
                     <p>2014 - 2018</p>
                     <div className="separator"></div>
-                    <h1></h1>
                     <MyList items={descriptions}/>
                 </div>
             </div>

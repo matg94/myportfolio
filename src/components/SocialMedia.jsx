@@ -7,7 +7,7 @@ function SocialMedia(props) {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             onClick={() => window.open(props.url)}>
-            <img alt="test" src={hovered ? props.hoverImage : props.image}/>
+            <img alt={props.image} src={hovered ? props.hoverImage : props.image}/>
         </div>
     )
   }

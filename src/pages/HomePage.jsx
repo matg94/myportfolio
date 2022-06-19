@@ -22,11 +22,9 @@ function HomePage(props) {
             width: '100%',
             height: '100%'
         }}>
-            <div className='section'>
+            <div className='section-home'>
                 <div className='sub-section'>
                     <h1 style={{fontSize: '3.25vw'}}>Mat Gautron</h1>
-                </div>
-                <div className='sub-section'>
                     <h1 style={{fontSize: '1.7vw'}}>Fullstack Software Engineer</h1>
                 </div>
                 <div className='sub-section'>
