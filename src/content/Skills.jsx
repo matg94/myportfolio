@@ -12,8 +12,7 @@ function Skills() {
                         "Python",
                         "Golang",
                         "Javascript",
-                        "Typesript",
-                        "C#"
+                        "Typesript"
                     ]}/>
                 </div>
                 <div className='sub-section'>
@@ -22,11 +21,8 @@ function Skills() {
                     <MyList items={[
                         "Spring",
                         "React",
-                        "Angular",
                         "Flask",
                         "Gin",
-                        "GRPC",
-                        "Click"
                     ]}/>
                 </div>
                 <div className='sub-section'>
@@ -34,11 +30,10 @@ function Skills() {
                     <div className="separator"/>
                     <MyList items={[
                         "Kubernetes",
-                        "Gitlab & Github",
+                        "Gitlab & Github CI/CD",
                         "PostgresQL",
                         "AWS",
-                        "Linux",
-                        "Bash"
+                        "Linux"
                     ]}/>
                 </div>
             </div>
