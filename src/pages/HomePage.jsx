@@ -1,19 +1,4 @@
 import SocialMedia from '../components/SocialMedia'
-import GA4React from 'ga-4-react';
-
-const ga4react = new GA4React(
-    "G-3F30BFJXY4",
-    { /* ga custom config, optional */ },
-    [ /* additional code, optional */ ],
-    5000 /* timeout, optional, defaults is 5000 */,
-  );
-    
-ga4react.initialize().then((ga4) => {
-    ga4.pageview('MainPage')
-    ga4.gtag('event','pageview','HomePage') // or your custom gtag event
-},(err) => {
-    console.error(err)
-})
 
 function HomePage(props) {
     return (
@@ -32,7 +17,8 @@ function HomePage(props) {
                         <SocialMedia
                             url="https://www.linkedin.com/in/mat-gautron-177451b3/"
                             image='/linkedin_logo.png'
-                            hoverImage='/linkedin_logo_hover.png'/>
+                            hoverImage='/linkedin_logo_hover.png'
+                            />
                         <SocialMedia
                             url="https://github.com/matg94/"
                             image='/github_logo.png'
