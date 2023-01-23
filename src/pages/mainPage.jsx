@@ -36,7 +36,7 @@ function MainPage() {
     return (
         <div className="font-link"> 
         
-            <Parallax pages={10} ref={ref}>
+            <Parallax pages={11} ref={ref}>
 
                 {/* Front welcome full width page */}
                 <ParallaxLayer>
@@ -46,7 +46,7 @@ function MainPage() {
                 {/* About me Section header */}
                 <ParallaxLayer
                     style={SectionLeftStyle}
-                    sticky={{ start: 1, end: 1.75}}>
+                    sticky={{ start: 1, end: 1.5}}>
                         <SectionCard
                             background={HEADER_BACKGROUND}
                             title="About Me"/>
@@ -55,7 +55,7 @@ function MainPage() {
                 {/* About me Section Content */}
                 <ParallaxLayer
                     style={SectionRightStyle}
-                    factor={1.75}
+                    factor={1.5}
                     offset={1}>
                     <AboutMe/>
                 </ParallaxLayer>
@@ -81,7 +81,7 @@ function MainPage() {
                 {/* Skills Section Header */}
                 <ParallaxLayer
                     style={SectionLeftStyle}
-                    sticky={{ start: 5, end: 6}}>
+                    sticky={{ start: 5, end: 7}}>
                         <SectionCard
                             background={HEADER_BACKGROUND}
                             title="Skills"/>
@@ -90,7 +90,7 @@ function MainPage() {
                 {/* Skills Section Content */}
                 <ParallaxLayer
                         style={SectionRightStyle}
-                        factor={2}
+                        factor={3}
                         offset={5}>
                         <Skills/>
                 </ParallaxLayer>
@@ -98,7 +98,7 @@ function MainPage() {
                 {/* Education Section Header */}
                 <ParallaxLayer
                     style={SectionLeftStyle}
-                    sticky={{ start: 7, end: 7}}>
+                    sticky={{ start: 8, end: 9}}>
                         <SectionCard
                             background={HEADER_BACKGROUND}
                             title="Education"/>
@@ -108,14 +108,14 @@ function MainPage() {
                 <ParallaxLayer
                     style={SectionRightStyle}
                     factor={1}
-                    offset={7}>
+                    offset={8}>
                         <Education/>
                 </ParallaxLayer>
 
                 {/* Portfolio Section Header */}
                 <ParallaxLayer
                     style={SectionLeftStyle}
-                    sticky={{ start: 8, end: 9}}>
+                    sticky={{ start: 9, end: 10}}>
                         <SectionCard
                             background={HEADER_BACKGROUND}
                             title="Portfolio"/>
@@ -125,14 +125,14 @@ function MainPage() {
                 <ParallaxLayer
                     style={SectionRightStyle}
                     factor={2}
-                    offset={8}>
+                    offset={9}>
                         <Portfolio/>
                 </ParallaxLayer>
 
                 <ParallaxLayer
                     factor={1}
                     offet={1}
-                    sticky={{start: 1, end: 10}}>
+                    sticky={{start: 1, end: 11}}>
                         <img alt='top' className='arrow-return arrow' onClick={scrollToTop} src="/arrow_green.png"></img>
                     </ParallaxLayer>
 

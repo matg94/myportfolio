@@ -19,7 +19,7 @@ function Skills() {
                     <h1>Web Frameworks / Libraries</h1>
                     <div className="separator"/>
                     <MyList items={[
-                        "Spring",
+                        "Spring Boot",
                         "React",
                         "Flask",
                         "Gin",
@@ -29,11 +29,22 @@ function Skills() {
                     <h1>Technologies</h1>
                     <div className="separator"/>
                     <MyList items={[
+                        "PostgresQL, DynamoDB",
+                        "AWS: ECS, EKS, S3, SQS/SNS",
+                        "Linux", 
+                        "Prometheus & Grafana",
+                        "New Relic",
+                    ]}/>
+                </div>
+                <div className='sub-section'>
+                    <h1>Dev Ops</h1>
+                    <div className="separator"/>
+                    <MyList items={[
                         "Kubernetes",
                         "Gitlab & Github CI/CD",
-                        "PostgresQL",
-                        "AWS",
-                        "Linux"
+                        "Docker",
+                        "Terraform",
+                        "Gradle & Maven"
                     ]}/>
                 </div>
             </div>

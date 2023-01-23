@@ -30,6 +30,7 @@ function HomePage(props) {
                     </div>
                 </div>
                 <div className='sub-section'>
+                    <h2>Scroll For More</h2>
                     <img onClick={props.arrowOnClick} className='arrow' src="/arrow_green.png"></img>
                 </div>
             </div>
